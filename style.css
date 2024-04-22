@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* letter-spacing: 1.2; */
+}
+body {
+  background: hsl(210, 36%, 96%);
+  line-height: 1.2;
+}
+
+main {
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
+}
+.reviews {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+}
+.reviews:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.text {
+  margin-bottom: 2px;
+}
+.container {
+  width: 80vw;
+  max-width: 1170px;
+  z-index: 1;
+}
+.underline {
+  height: 3px;
+  width: 5rem;
+  background-color: lightskyblue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review {
+  margin-top: 4rem;
+  background: #fff;
+  text-align: center;
+}
+.img-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.people-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 3;
+}
+.img-container::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 2rem;
+  content: '\f10e';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  border-radius: 50%;
+  background: hsl(205, 78%, 60%);
+  color: white;
+  z-index: 5;
+}
+.img-container::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: lightskyblue;
+  top: -0.26rem;
+  left: 0.6rem;
+  border-radius: 50%;
+  /* z-index: ; */
+}
+#writer {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+#profession {
+  color: lightskyblue;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+.description {
+  color: hsl(210, 22%, 49%);
+  margin-bottom: 0.5rem;
+}
+.prev-btn,
+.next-btn {
+  color: lightskyblue;
+  border: transparent;
+  background: transparent;
+  font-size: 1.25rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: hsl(205, 78%, 60%);
+}
+.surprise {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  background-color: hsl(205, 100%, 96%);
+
+  text-transform: capitalize;
+  border-radius: 5px;
+  transition: all 0.3 ease-in;
+  border-color: lightskyblue;
+  cursor: pointer;
+}
+
+.surprise:hover {
+  background: lightskyblue;
+  color: #222;
+}
